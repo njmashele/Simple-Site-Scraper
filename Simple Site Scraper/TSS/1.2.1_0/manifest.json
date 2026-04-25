@@ -1,0 +1,30 @@
+{
+   "action": {
+      "default_icon": "paint-scraper 64.png"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "onload.css" ],
+      "js": [ "js/jquery-3.1.1.min.js", "js/sha256.min.js", "onload.js" ],
+      "matches": [ "*://*/*" ]
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "description": "Takora Site Scraper extracts data from web pages and exports it as Excel or CSV files",
+   "icons": {
+      "128": "paint-scraper 128.png",
+      "16": "paint-scraper 16.png",
+      "32": "paint-scraper 32.png",
+      "64": "paint-scraper 64.png"
+   },
+   "incognito": "split",
+   "manifest_version": 3,
+   "name": "Takora Site Scraper",
+   "permissions": [ "webRequest", "activeTab" ],
+   "version": "1.6",
+   "author": "Jon Mashele",                       
+  "homepage_url": "https://github.com/njmashele/Takora-Site-Scraper"
+}
