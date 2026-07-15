@@ -40,38 +40,6 @@ This extension isn't published on the Chrome Web Store, so you'll need to load i
 7. Rename or delete columns directly in the preview grid. These preferences are saved per-domain so you won't have to redo them next time.
 8. Export using the **CSV**, **XLSX**, or **COPY ALL** buttons.
 
-## Project structure
-
-```
-Simple-site-scraper/
-├── manifest.json          # Extension manifest (MV3)
-├── background.js          # Service worker, opens the popup window
-├── popup.html             # Popup UI
-├── popup.js                # Popup logic: table preview, export, crawling control
-├── popup.css
-├── onload.js               # Content script injected into every page, handles table detection & scraping
-├── onload.css               # Highlight styles used while selecting tables/rows
-├── logo.jpg
-├── paint-scraper 16.png
-├── paint-scraper 32.png
-├── paint-scraper 64.png
-├── paint-scraper 128.png
-├── js/
-│   ├── jquery-3.1.1.min.js
-│   ├── sha256.min.js
-│   ├── papaparse.min.js
-│   ├── FileSaver.js
-│   ├── bootstrap.min.js
-│   ├── handsontable.full.min.js
-│   ├── xlsx.full.min.js
-│   └── google-analytics.js
-└── css/
-    ├── bootstrap.min.css
-    └── handsontable.full.min.css
-```
-
-> **Note:** `manifest.json` references icon files as `paint-scraper 64.png` (with a space). Make sure the filenames on disk match exactly, or Chrome will fail to load the icons.
-
 ## Third-party libraries
 
 This extension bundles a few open-source libraries to handle parsing, spreadsheet display, and file exports:
