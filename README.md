@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.jpg" width="280" alt="Simple">
+  <img src="Simple Site Scraper/logo.jpg" width="280" alt="Simple">
 </p>
 
 # Simple Site Scraper
