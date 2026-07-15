@@ -54,16 +54,8 @@ This extension bundles a few open-source libraries to handle parsing, spreadshee
 
 Each of these carries its own license (mostly MIT), so it's worth double-checking before you redistribute this publicly.
 
-## A note on analytics
-
-`js/google-analytics.js` sends usage events (page views, downloads, errors) to a Google Analytics 4 property using a hardcoded measurement ID and API secret. If you're pushing this to a public repo, you'll probably want to either strip this file out, swap in your own GA property, or gate it behind a feature flag before sharing the code. Right now anyone who reads the source can see (and post events to) your analytics property.
-
 ## Known limitations
 
 - LinkedIn is explicitly blocked from scraping.
 - The popup preview is capped at 1,000 rows; everything past that is still collected but not rendered live.
 - Table detection is heuristic-based (size + repeated class names), so oddly structured pages may need a manual "Try another table" nudge.
-
-## License
-
-Add a license of your choice here (MIT is a common pick for personal projects like this). Until you do, this repo defaults to "all rights reserved."
